@@ -4,7 +4,7 @@ import { addData } from './action';
 function App(props: any) {
   useEffect(() => {
     addData({ createdDate:new Date().toISOString(),pagename: 'home', total: props.total, cart: props.cart.length });
-  }, []);
+  }, [props]);
   return (
     <>
       <div className="__className"style={{zoom:0.9}}>
