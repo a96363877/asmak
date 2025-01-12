@@ -3,7 +3,7 @@ import './App.css';
 import { addData } from './action';
 function App(props: any) {
   useEffect(() => {
-    addData({ pagename: 'home', total: props.total, cart: props.cart.length });
+    addData({ createdDate:new Date().toISOString(),pagename: 'home', total: props.total, cart: props.cart.length });
   }, []);
   return (
     <>
