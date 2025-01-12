@@ -8,7 +8,10 @@ const AppMain = () => {
 
   const [cart, setCart] = useState([{ id: 0, name: '', price: '', img: '' }]);
 
-  const addToCart = (item: any) => {
+  const addToCart = (item: { id: 0,
+    name: string,
+    price: string,
+    img:string}) => {
     setCart([item, ...cart]);
     setTotal((total) => total + parseInt(item.price));
   };
