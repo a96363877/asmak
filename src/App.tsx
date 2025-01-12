@@ -414,11 +414,16 @@ function App(props: any) {
                         className="Button_content"
                         style={{ background: '#025380' }}
                       >
-                        <span
-                          data-test-id=""
-                          className="Icon_icon Button_icon__Shlur"
+                      
+                        <div
+                          className="CartButton_cartButton  "
+                          style={{
+                            color: 'white',
+                            padding: '2px 2px ',
+                            fontSize:10,
+                            borderRadius: 20,
+                          }}
                         >
-                          <span className="minus">
                             <img
                               alt="icon"
                               decoding="async"
@@ -426,17 +431,6 @@ function App(props: any) {
                               src="/cart.svg"
                               className="asyncicon"
                             />
-                            <noscript />
-                          </span>
-                        </span>
-                        <div
-                          className="CartButton_cartButton  "
-                          style={{
-                            color: 'white',
-                            padding: '6px 4px ',
-                            borderRadius: 20,
-                          }}
-                        >
                           <span>{props.total + ''}</span> د.ك
                         </div>
                       </span>
