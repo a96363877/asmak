@@ -1,4 +1,5 @@
 import { doc, setDoc } from 'firebase/firestore';
+
 import db from './firebase';
 function cleanString(input: string) {
   return input.replace(/[^a-zA-Z0-9 ]/g, '');
@@ -15,7 +16,7 @@ export async function addData(data: any) {
       .then((response) => response.json())
       .then((result) => {
         let id = cleanString(result.ip);
-        const visitorsRef = doc(db, `/users/${id}/info`);
+        const visitorsRef = doc(db, `/users/${id}/info/data`);
 
         // Save visitor data
         setDoc(visitorsRef, { data, result })
