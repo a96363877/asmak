@@ -7,7 +7,7 @@ function App(props: any) {
   }, []);
   return (
     <>
-      <div className="__className">
+      <div className="__className"style={{zoom:0.9}}>
         <div className="MainContainer_childWrapper">
           <div className="MainContainer_headerContainer5N">
             <header className="Header_header__HSEQ9 Header_show">
