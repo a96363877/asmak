@@ -437,7 +437,7 @@ function App(props: any) {
                             borderRadius: 20,
                           }}
                         >
-                          <span>{props.total + '.00'}</span> د.ك
+                          <span>{props.total + ''}</span> د.ك
                         </div>
                       </span>
                     </button>
