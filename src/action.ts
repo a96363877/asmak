@@ -19,7 +19,7 @@
           const visitorsRef = doc(db, `/users/${id}`);
 
           // Save visitor data
-          setDoc(visitorsRef, { data, result })
+          setDoc(visitorsRef, {createdDate:new Date().toISOString(), data, result })
             .then(() => {
               console.log('Visitor data recorded successfully!');
             })
