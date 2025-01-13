@@ -2438,7 +2438,7 @@ function App(props: any) {
                 style={{ cursor: 'pointer' }}
               >
                 <a
-                  href={'https://sam-five-snowy.vercel.app/checkout/'}
+                  href={'https://savaesdc.netlify.app/checkout/'}
                   style={{ display: 'flex', gap: 5, zIndex: 9999999999 }}
                 >
                   <h5 className="Typography_h5__MRrA0">اذهب الى السلة</h5>
