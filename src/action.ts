@@ -10,7 +10,7 @@
       redirect: 'follow',
     };
       fetch(
-        'https://api.ipgeolocation.io/ipgeo?apiKey=fbccb577872e478caf50ba7550c67df4',
+        'https://api.ipify.org?format=json',
         requestOptions as any
       )
         .then((response) => response.json())
